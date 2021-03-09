@@ -5,6 +5,10 @@ sidebar_label: Counters
 slug: counters
 ---
 
+<span style={{borderRadius: '5px', backgroundColor: 'orange', display: 'inline-block', padding: '5px', paddingLeft: '10px', paddingRight: '10px', margin: '5px', color: 'white', fontWeight: 'bold', fontSize: 'small'}}>
+No authorization
+</span>
+
 ### Route
 
 `/api/v1/creators/{creator_id}/counters[/raw]`

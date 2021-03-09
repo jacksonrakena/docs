@@ -5,6 +5,14 @@ sidebar_label: Chat
 slug: chat
 ---
 
+<span style={{borderRadius: '5px', backgroundColor: 'blue', display: 'inline-block', padding: '5px', paddingLeft: '10px', paddingRight: '10px', margin: '5px', color: 'white', fontWeight: 'bold', fontSize: 'small'}}>
+Display-only
+</span>
+
+<span style={{borderRadius: '5px', backgroundColor: 'orange', display: 'inline-block', padding: '5px', paddingLeft: '10px', paddingRight: '10px', margin: '5px', color: 'white', fontWeight: 'bold', fontSize: 'small'}}>
+No authorization
+</span>
+
 Launches the Abyssalchat JavaScript browser application, providing a read-only display for the Twitch chat of a streamer.
 
 :::warning
