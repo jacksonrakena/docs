@@ -25,7 +25,10 @@ module.exports = {
       label: 'SpotiNET',
       items: [
         'spotinet/intro',
-        'spotinet/your-first-client'
+        'spotinet/auth',
+        'spotinet/your-first-client',
+        'spotinet/id-lookup',
+        'spotinet/querying'
       ]
     },
     {
