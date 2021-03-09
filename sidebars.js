@@ -5,6 +5,10 @@ module.exports = {
       id: 'index'
     },
     {
+      type: 'doc',
+      id: 'cdn'
+    },
+    {
       type: 'category',
       label: 'Abyssal Live v1',
       items: [

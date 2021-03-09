@@ -16,10 +16,11 @@ All Abyssal Live requests are made over HTTPS to `https://live.abyssal.gg` with 
   
 The SSL certificate for `live.abyssal.gg` is issued to `sni.cloudflaressl.com`, validated on all major certificate chains.  
   
-For security purposes, the certificate for `docs.abyssal.gg` is different to the certificate for `live.abyssal.gg`.  
-  
 If the certificate is not approved, you **must** close the request.
 
+:::note
+For security purposes, the certificate for `docs.abyssal.gg` is different to the certificate for `live.abyssal.gg`.  
+:::
 ___
 ## Versioning
 The current API version is **v1**/**v2**.  
@@ -46,6 +47,10 @@ https://live.abyssal.gg/api/v1/creators/abyssalnz/counters
 ```
 Where `abyssalnz` is the creator identifier - which are available on request.
 
+:::note
+Public authorization may be known as unauthorized routes in other APIs.
+:::
+
 ### Private
 Private authorization is used when accessing sensitive or private information, or updating records.
 Private authorization uses a permanent **Abyssal Live Secret Key**, which is a 32-byte-long Base64-encoded string, sent as a header.
@@ -53,8 +58,9 @@ Here's an example:
 ```headers
 Authorization: Basic hg2n0dHQyNrQGahIlMpQod5sGhqDr9OSFZ5RWlz4BGc
 ```
-(some legacy clients marked with **Auth-Legacy** require it sent with header key `X-Abyssal-Live-Token`, and without the `Basic`)
-
+:::warning
+Some legacy clients marked with the **Auth-Legacy** tag require authorization to be sent with the header key `X-Abyssal-Live-Token`, and without the `Basic` prefix.
+:::
 ___
 
 ## Data formats
