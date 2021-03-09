@@ -16,5 +16,20 @@ module.exports = {
         'abyssal-live-v1/view-event-logs'
       ],
     },
+    {
+      type: 'category',
+      label: 'SpotiNET',
+      items: [
+        'spotinet/intro',
+        'spotinet/your-first-client'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Identity',
+      items: [
+        'identity/intro'
+      ]
+    }
   ],
 };

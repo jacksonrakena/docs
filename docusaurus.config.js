@@ -75,6 +75,9 @@ module.exports = {
       ],
       copyright: `MIT © 2019-${new Date().getFullYear()} Abyssal`,
     },
+    prism: {
+      additionalLanguages: ['csharp']
+    }
   },
   presets: [
     [
