@@ -12,6 +12,7 @@ No authorization
 ### Route
 
 `/api/v1/creators/{creator_id}/counters[/raw]`
+`/api/v1/creators/{creator_id}/counters/{provider}`
 
 ### Description
 Produces an on-screen rendering of a creator's social media presence statistics.  
@@ -20,6 +21,9 @@ This is a paid endpoint, and as such, a creator ID must be provided.
 **Raw mode**  
 If the `/raw` endpoint is added to the end of the URL, this endpoint will return JSON data, instead of a formatted HTML document.
 The data returned will fit [this data structure.](#raw-mode-result-structure)
+
+**Provider-only mode**  
+If the `{provider}` route variable is provided, a different result will be returned. See [Provider-only mode](#provider-only-mode).
 
 ### Retention
 The API server caches this data for 6 hours, and will lazily retrieve it - so requests done outside of 
@@ -54,5 +58,14 @@ The available providers can be viewed at the [API health](status) endpoint, unde
     "twitch": 423802,
     "discord": 45814,
     "tiktok": 257300
+}
+```
+
+### Provider-only mode
+If the `{provider}` route variable is provided, statistics for a single platform will be provided, in this format:
+```json
+{
+    "tag": "twitter", // {provider}
+    "value": 70987
 }
 ```
