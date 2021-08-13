@@ -5,10 +5,6 @@ module.exports = {
       id: 'index'
     },
     {
-      type: 'doc',
-      id: 'cdn'
-    },
-    {
       type: 'category',
       label: 'Abyssal Live v1',
       items: [
@@ -29,13 +25,6 @@ module.exports = {
         'spotinet/your-first-client',
         'spotinet/id-lookup',
         'spotinet/querying'
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Identity',
-      items: [
-        'identity/intro'
       ]
     }
   ],
